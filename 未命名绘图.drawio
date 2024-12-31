@@ -63,6 +63,35 @@
         <mxCell id="TvClRxy8d6DLWlSvi-L--26" value="172.20.20.0/24" style="verticalLabelPosition=middle;sketch=0;aspect=fixed;html=1;verticalAlign=middle;strokeColor=none;align=right;outlineConnect=0;shape=mxgraph.citrix.switch;labelPosition=left;" parent="1" vertex="1">
           <mxGeometry x="648.65" y="70" width="92" height="41.5" as="geometry" />
         </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-3" value="" style="endArrow=classic;html=1;rounded=0;endFill=1;startArrow=classic;startFill=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="440" as="sourcePoint" />
+            <mxPoint x="890" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="130" />
+              <mxPoint x="890" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;strokeWidth=3;exitX=0.62;exitY=-0.021;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;startFill=1;endFill=1;" edge="1" parent="1" source="TvClRxy8d6DLWlSvi-L--14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="442" as="sourcePoint" />
+            <mxPoint x="861" y="442" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="280" />
+              <mxPoint x="720" y="282" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-8" value="Resource:&lt;div&gt;FTP(192.168.31.123)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="625.5" y="550" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-9" value="Route:&lt;div&gt;net 20.0.0.0/24 gw 192.168.31.111&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="459.5" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-10" value="&lt;div&gt;Chain PREROUTING (policy ACCEPT)&lt;/div&gt;&lt;div&gt;target&amp;nbsp; &amp;nbsp; &amp;nbsp;prot opt source&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;destination&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:5556 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:3000 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:8000 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:8888 redir ports 5555&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="436" width="460" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
