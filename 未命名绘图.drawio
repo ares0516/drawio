@@ -92,6 +92,18 @@
         <mxCell id="UjK03ACXC7DD6p1siXCf-10" value="&lt;div&gt;Chain PREROUTING (policy ACCEPT)&lt;/div&gt;&lt;div&gt;target&amp;nbsp; &amp;nbsp; &amp;nbsp;prot opt source&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;destination&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:5556 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:3000 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:8000 redir ports 5555&lt;/div&gt;&lt;div&gt;REDIRECT&amp;nbsp; &amp;nbsp;tcp&amp;nbsp; --&amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.0.0.0/0&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tcp dpt:8888 redir ports 5555&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="920" y="436" width="460" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="380" as="sourcePoint" />
+            <mxPoint x="840" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UjK03ACXC7DD6p1siXCf-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="380" as="sourcePoint" />
+            <mxPoint x="840" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
